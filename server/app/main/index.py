@@ -6,7 +6,7 @@ from app.exceptions import ServiceError
 from . import main
 from restful import Restful
 
-@main.route('/')
+@main.route('/', methods=['GET', 'POST'])
 def index():
     return wechatService.process(request.args, request.data)
 
