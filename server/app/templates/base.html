@@ -1,0 +1,22 @@
+{% block title %}Raindrop{% endblock %}
+
+{% block head %}
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+<link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+{% assets "base_css" %}
+    <link rel="stylesheet" href="{{ ASSET_URL }}" />
+{% endassets %}
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    {% block page_content %}{% endblock %}
+</div>
+
+<div class="footer">
+    <p style="font-size:13px;">Designed and Built with All The Love for You by Raindrop Studio. &copy;2015 Raindrop Studio, All Rights Reserved</p>
+</div>
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}
