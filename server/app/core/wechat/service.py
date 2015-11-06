@@ -67,7 +67,6 @@ class WechatService(WechatBasic):
         self.token = token
         self.app_id = appid
         self.aes_key = appsecret
-
         print self.create_menu(self.menus)
 
     def is_valid_params(self, params):
